@@ -1,18 +1,22 @@
 ---
 resources:
-  - name: resource-master
+  
+  - name: resource-app-features
     type: git
     source:
-      uri: https://github.com/dammc/concourse-hello-world.git
-      branch: master
+      uri: https://github.com/dammc/hello-world-app.git
+      branch: features
 
 jobs:
   - name: job-hello-world
     public: true
     plan:
-    - get: resource-master
+    - get: resource-app-features
+      trigger: true
     - task: hello-world
-      file: resource-master/Tasks/task-hello-world/task_hello_world.yml
+      file: resource-app-features/task_hello_world.yml
+    - task: unit-test
+      file: resource-app-features/task_unit_test.yml
 
 groups:
   - name: demo
