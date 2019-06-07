@@ -9,5 +9,5 @@ inputs:
   - name: resource-master
 
 run:
-  path: resource-master/Tasks/task-hello-world/task_hello_world.yml
+  path: resource-master/Tasks/task-hello-world/hello_world_app.sh
   
