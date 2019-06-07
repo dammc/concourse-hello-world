@@ -5,6 +5,8 @@ image_resource:
   type: docker-image
   source: {repository: busybox}
 
+inputs: task-hello-world
+
 run:
-  path: echo
-  args: [hello world]
+  path: ./task-hello-world/hello-world-app.sh
+  

@@ -12,7 +12,7 @@ jobs:
     plan:
     - get: resource-master
     - task: hello-world
-      file: Tasks/task-hello-world/task_hello_world.yml
+      file: resource-master/Tasks/task-hello-world/task_hello_world.yml
 
 groups:
   - name: demo
