@@ -6,7 +6,7 @@ image_resource:
   source: {repository: busybox}
 
 inputs: 
-  - task-hello-world
+  - name: task-hello-world
 
 run:
   path: ./task-hello-world/hello-world-app.sh
