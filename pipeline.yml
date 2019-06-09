@@ -13,8 +13,6 @@ jobs:
     plan:
     - get: resource-app-features
       trigger: true
-    - task: hello-world
-      file: resource-app-features/task_hello_world.yml
     - task: unit-test
       file: resource-app-features/task_unit_test.yml
 
