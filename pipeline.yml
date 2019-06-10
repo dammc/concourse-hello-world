@@ -13,7 +13,7 @@ resources:
       branch: features
 
 jobs:
-  - name: job-hello-world
+  - name: job-unit-test
     public: true
     plan:
     - get: resource-concourse-master
@@ -25,5 +25,6 @@ jobs:
 groups:
   - name: demo
     jobs:
-      - job-hello-world
+      - job-unit-test
+
       
