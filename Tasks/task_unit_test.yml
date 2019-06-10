@@ -6,10 +6,10 @@ image_resource:
   source: {repository: alpine}
 
 inputs:
-  - name: resource-app-features
+  - name: resource-app-master
   - name: resource-concourse-features
   
 
 run:
-  path: resource-concourse-features/Tasks/unit_test.sh
+  path: resource-concourse-master/Tasks/unit_test.sh
   
