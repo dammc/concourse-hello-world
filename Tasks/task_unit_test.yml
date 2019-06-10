@@ -6,8 +6,8 @@ image_resource:
   source: {repository: alpine}
 
 inputs:
-  - name: resource-app-master
-  - name: resource-concourse-features
+  - name: resource-app-features
+  - name: resource-concourse-master
   
 
 run:
