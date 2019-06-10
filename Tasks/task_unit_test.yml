@@ -1,0 +1,15 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: {repository: alpine}
+
+inputs:
+  - name: resource-app-features
+  - name: resource-concourse-features
+  
+
+run:
+  path: resource-concourse-features/Tasks/unit_test.sh
+  
