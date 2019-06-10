@@ -17,6 +17,7 @@ jobs:
     public: true
     plan:
     - get: resource-concourse-features
+    - get: resource-app-features
       trigger: true
     - task: unit-test
       file: resource-concourse-features/Tasks/task_unit_test.yml
